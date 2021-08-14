@@ -22,4 +22,15 @@ legend("topleft", inset=.05,title="Drug Type",c("A","B"), lty=c(1,2),pch=c(15,17
 par(opar)
 #恢复为默认图形参数
 
+attach(mtcars)
+rmatrix <- matrix(c(1,1,2,3),2,2,byrow=TRUE)
+#设定图片摆放的位置，1代表第一个图占的位置（第一行的两列），2代表第二个图占第二行第一列，3代表第三个图占第二行第二列
+
+layout(rmatrix)
+hist(wt)
+hist(mpg)
+hist(disp)
+hist(disp)
+detach(mtcars)
+
     
