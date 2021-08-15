@@ -21,4 +21,4 @@ with(tableData,{
   math25 <- quantile(MathScore, c(.25))
     #quantile(x,probs)求百分位数
 })
-mathMean
+
