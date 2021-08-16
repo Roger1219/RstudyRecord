@@ -6,6 +6,8 @@ MathScore <- c(502,600,412,358,495,512,410,625,573,522)
 ScienceScore <- c(95,99,80,82,75,85,80,95,89,86)
 EnglishScore <- c(25,22,18,15,20,28,15,30,27,18)
 tableData <- data.frame(rName,MathScore,ScienceScore,EnglishScore,stringsAsFactors = FALSE)
+tableData
+
 
 #将各科成绩进行标准化,均值50，标准差10
 z <- scale(tableData[,2:4])*10 +50
